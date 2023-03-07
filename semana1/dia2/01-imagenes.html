@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header><h1>Imagenes en HTML</h1></header>
+    <main>
+        <h2>Usando la etiqueta img</h2>
+        <section>
+            <img src="descarga.jpg" alt="ejemplo de una imagen">
+        </section>
+
+        <section>
+            <details>
+                <summary>
+                    <h3>Usando la etiqueta picture</h3>
+                </summary>
+                <picture>
+                    <source srcset="descarga.jpg" media="(min-width: 600px)">
+                    <img src="descarga.jpg" alt="ejemplo de una imagen">
+                </picture>
+                
+            </details>
+        </section>
+    </main>
+  </body>
+</html>
+
+
+
+<section>
+    <h2>Ejercicio</h2>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td rowspan="5">supermercados</td>
+                <td></td>
+                <td>25/04/2022</td>
+            </tr>
+            <tr>
+                <td colspan="2">N° Factura 25611</td>
+            </tr>
+            <tr>
+                <td>Cliente:</td>
+                <td rowspan="3">
+                    Jorge Garnica <br />
+                    16354354354 <br />
+                    Dirección
+                </td>
+            </tr>
+            <tr>
+                <td>RUC:</td>
+            </tr>
+            <tr>
+                <td>Dirección</td>
+            </tr>
+        </tbody>
+    </table>
+</section>

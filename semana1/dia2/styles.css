@@ -1,0 +1,11 @@
+table{
+    width: 35%;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.negrita-color{
+    background-color: yellowgreen;
+}
