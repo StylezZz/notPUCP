@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: #444;
+            font-family: sans-serif;
+        }
+        .caja-1{
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+            border-radius: 5px;
+            /* transform: scale(1.2); */
+        }
+        .caja-1:hover{
+            transform: scale(1.2);
+        }
+        .bolita-1,
+        .bolita-2{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .fondo-rojo{
+            background-color: red;
+        }
+
+        .fondo-morado{
+            background-color: purple;
+        }
+
+        .padre{
+            border: 1px solid blue;
+        }
+        .padre:hover .bolita-1{
+            /*Mover a la derecha*/
+            transform: translate(500px,0);
+            transition: all 1s ease-in;
+        }
+
+        .padre:hover .bolita-2{
+            /*Mover a la izquierda*/
+            transform: translate(500px,0);
+            transition: all 1s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#">Nosotros</a>
+    <div class="caja-1"></div>
+    <div class="padre">
+        <div class="bolita-1 fondo-rojo"></div>
+        <div class="bolita-2 fondo-morado"></div>
+    </div>
+</body>
+</html>

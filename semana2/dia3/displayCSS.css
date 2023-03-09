@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main__sidebar{
+    width: 240px;
+    border: 1px solid red;
+    height: 200px;
+    display: inline-block;
+}
+
+.main__principal{
+    width: 600px;
+    border: 1px solid purple;
+    height: 200px;
+    display: inline-block;
+}
+
+.navbar__list_item{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.navbar__list{
+    list-style: none;
+    text-align: center;
+}
+
+.navbar{
+    height: 50px;
+    box-shadow: #444 0px 0px 8px;
+    background-color: #24252a;
+    color: white;
+}
+
+.active{
+    background-color: #0287a8;
+    border-radius: 10px;
+    
+}
