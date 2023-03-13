@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: salmon;
+}
+
+h1{
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    /*en esta propiedad yo puedo definir el número
+    de columnas que quiero mostrar 
+    */
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    border: 4px solid green;
+}
+
+.container div{
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.item1{
+    background-color: lightblue;
+    border: blue 1px solid;
+    grid-row: 1/3;
+}
+
+.reset{
+    border: solid;
+    grid-column: 3/ span 2;
+}
+
+.equal{
+    border: solid red;
+    grid-column: 3/span 2;
+}
