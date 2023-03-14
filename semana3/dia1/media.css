@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9999ff;
+}
+
+li{
+    display: inline-block;
+}
+
+
+p{
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section{
+    border: 1px solid red;
+    width: 25%;
+}
+
+@media (max-width: 480px) {
+    body{
+        background-color: #ff9999;
+    }
+
+    li{
+        display: block;
+    }
+
+    .section{
+        width: 100%;
+    }
+}

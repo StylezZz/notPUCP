@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 100px;
+    width: 98%;
+    margin: 20px;
+    background-color: #9e50cf;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.header__title{
+    font-size: 40px;
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.main__list{
+    list-style: none;
+}
+
+.main__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    height: 70px;
+    margin: 20px;
+    background-color: lightblue;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+}
+
+.main__content{
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
+.main__title{
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.main__text{
+    font-size: 40px;
+    color: black;
+    max-width: 6500px;
+}
+
+.main__questions{
+    background-color: lightblue;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+    margin-right: 20px;
+}
+
+.question__title{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.question__text{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer{
+    background-color: lightblue;
+    height: 100px;
+    width: 98%;
+    margin: auto;
+}
+
+.footer .footer__text{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding-top: 35px;
+}
+
+
+@media (max-width:768px){
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main__content{
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .main__text{
+        font-size: 38px;
+    }
+
+    .main__questions{
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+@media (max-width:450px){
+    .main{
+        display: grid;
+    }
+
+    .main__titles{
+        margin: 10px;
+    }
+
+    .main__item{
+        width: 100%;
+        margin: 10px;
+    }
+    
+    .main__content{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .main__questions{
+        width: 98%;
+        margin: 10px;
+    }
+
+    .footer{
+        width: 98%;
+        margin: 10px;
+        max-width: 500px;
+    }
+
+    .footer__text{
+        font-size: 20px;
+        padding-top: 80px;
+        padding-right: 20px;
+    }
+
+}
