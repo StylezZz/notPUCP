@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+#navbar{
+    background-color: beige;
+    width: 20%;
+    height: 100vh; 
+    border-right: 3px solid black; 
+    position: fixed;
+}
+
+#navbar header{
+    background-color: #f1f1f1;
+    text-align: center;
+    border-bottom: 1.5px solid black;
+    font-size: 30px;
+    padding: 15px;
+}
+
+#navbar ul{
+    list-style: none;
+}
+
+#navbar ul li{
+    padding-top: 27px;
+    padding-left: 27px;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+#navbar ul li:last-child{
+    border-bottom: none;
+}
+
+
+header{
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#main-doc{
+    width: 80%;
+    height: 100vh;
+    float: right;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 390px;
+}
+
+#main-doc .main-section{
+    margin-left: 15px;
+    margin-bottom: 25px;
+    max-width: 1400px;
+}
+
+#main-doc header{
+    margin-bottom: 20px;
+}
+
+#main-doc p{
+    margin-bottom: 15px;
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+#main-doc .main-section li{
+    margin-left: 100px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+#main-doc .main-section li::before{
+    content: "•";
+    position: absolute;
+    margin-left: -20px;
+    color: black;
+}
+
+.main-section code{
+    display: block;
+    background-color: #f1f1f1;
+    line-height: 30px;
+    font-family: monospace;
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.link_not_styled{
+    color: black;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px){
+    #navbar{
+        width: 100%;
+        height: 50%;
+        border-right: none;
+        position: relative;
+    }
+    #navbar header{
+        font-size: 20px;
+        padding: 10px;
+    }
+    #navbar ul li{
+        padding-top: 10px;
+        padding-left: 10px;
+        border-bottom: 1px solid black;
+        text-align: left;
+    }
+
+    #main-doc{
+        width: 100%;
+        height: 50%;
+        float: none;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+
+    #main-doc .main-section li::before{
+        content: "•";
+        position: absolute;
+        margin-left: -20px;
+        color: black;
+    }
+    .main-section code{
+        display: block;
+        background-color: #f1f1f1;
+        line-height: 30px;
+        font-family: monospace;
+        text-align: left;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+    .link_not_styled{
+        color: black;
+        text-decoration: underline;
+    }
+}
